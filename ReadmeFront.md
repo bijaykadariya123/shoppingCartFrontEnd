@@ -49,6 +49,11 @@ EX: This will create a react app with all the files needed. TO TEST: go to termi
 2. import Header from "./components/Header.js"
 
 
-## on Header.js
+## on Header.js 10
 1. import { Link } from "react-router-dom"
         use Link to use like a anchor tag (<a></a>)
+
+## create styles.scss file on src folder 11
+1. go to index.js and import "./styles.scss"
+
+
