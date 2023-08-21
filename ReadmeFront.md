@@ -10,10 +10,10 @@ EX: This will create a react app with all the files needed. TO TEST: go to termi
 ## install react-router-dom saas 3
 1. npm install react-router-dom sass
 
-## Create router.js loaders.js actions.js inside src folder:
+## Create router.js loaders.js actions.js inside src folder: 4
 1. touch src/router.js src/loaders.js actions.js
 
-## on router.js Import dependencies and do Initial setup
+## on router.js Import dependencies and do Initial setup 5
 1. import {createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom"
 2. import App from "./App"
 3. Create a front end path:
@@ -26,3 +26,13 @@ EX: This will create a react app with all the files needed. TO TEST: go to termi
     )) 
 
     export default router
+ ## In Index.js: 6
+  Register the router created above in Index.js since Index.js is where app starts
+ 1. import {RouterProvider} from "react-router-dom"
+ 2. import router from "./router.js"
+
+## create following folder inside src folder and respective files:
+1. create components folder inside src folder
+    1. create Header.js file
+2. pages folder inside inside src folder
+    1. create index.js file
