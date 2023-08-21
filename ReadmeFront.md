@@ -31,8 +31,24 @@ EX: This will create a react app with all the files needed. TO TEST: go to termi
  1. import {RouterProvider} from "react-router-dom"
  2. import router from "./router.js"
 
-## create following folder inside src folder and respective files:
+## create following folder inside src folder and respective files:7
 1. create components folder inside src folder
     1. create Header.js file
 2. pages folder inside inside src folder
     1. create index.js file
+    2. create show.js file
+
+## On router.js 8
+1. import Index from "./pages/index.js"
+2. import Show from "./pages/show.js"
+
+## on App.js 9
+1. import {Outlet} from "react-router-dom"
+
+        This outlet component will let you show the subroute from your router.js
+2. import Header from "./components/Header.js"
+
+
+## on Header.js
+1. import { Link } from "react-router-dom"
+        use Link to use like a anchor tag (<a></a>)
