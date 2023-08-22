@@ -56,4 +56,16 @@ EX: This will create a react app with all the files needed. TO TEST: go to termi
 ## create styles.scss file on src folder 11
 1. go to index.js and import "./styles.scss"
 
+## on you loaders.js 12
+1. import { baseURL } from "./base_url"
+2. Create a function loaderItems to fetch data and return as js object:
+
+## on your router.js 13
+1. import { itemsLoader } from "./loaders.js"
+2. use you itemsLoader in your route in index component <Route loader={itemsLoader}/>
+
+## on pages/index.js
+1. import {Link, useLoaderData} from "react-router-dom"
+2. use useLoaderData()
+3. Write a function to return your HTML elements on index page.
 
